@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Yellow Olive",
+    "description": "A retro TUI game that gamifies Kubernetes learning - real cluster challenges, nostalgic vibes, and a pixel-art Academy in the browser.",
+    "stars": 101,
+    "downloads": 6837,
+    "tags": [
+      "Python",
+      "Kubernetes",
+      "Textual",
+      "Pyxel"
+    ],
+    "image": "/images/yellow-olive.png",
+    "url": "https://pypi.org/project/yellow-olive/",
+    "urlLabel": "PyPI",
+    "github": "https://github.com/Anubhav9/Yellow-Olive",
+    "featured": true
+  },
+  {
+    "name": "RedCoffee",
+    "description": "A CLI for generating SonarQube Community Edition PDF reports and supporting developer workflows.",
+    "stars": 40,
+    "downloads": 68859,
+    "tags": [
+      "Python",
+      "SonarQube",
+      "CLI",
+      "Open Source"
+    ],
+    "image": "/images/redcoffee.svg",
+    "url": "https://pypi.org/project/redcoffee/",
+    "urlLabel": "PyPI",
+    "github": "https://github.com/Anubhav9/RedCoffee",
+    "featured": true
+  }
+]

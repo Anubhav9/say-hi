@@ -1,0 +1,48 @@
+---
+import profile from '../data/profile.json';
+import projects from '../data/projects.json';
+import talks from '../data/talks.json';
+import articles from '../data/articles.json';
+import experience from '../data/experience.json';
+import SectionHeading from '../components/SectionHeading.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import TalkCard from '../components/TalkCard.astro';
+import ArticleCard from '../components/ArticleCard.astro';
+import '../styles/global.css';
+const featuredTalks = talks.filter(t => t.featured);
+const extraTalks = talks.filter(t => !t.featured);
+const featuredArticles = articles.filter(a => a.featured);
+const extraArticles = articles.filter(a => !a.featured);
+const contactLinks = [
+  { label: 'LinkedIn', href: profile.linkedin },
+  { label: 'GitHub', href: profile.github },
+  { label: 'Medium', href: profile.medium },
+  { label: 'Email', href: profile.email ? `mailto:${profile.email}` : '' },
+].filter(x => x.href);
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content={`${profile.name} - software engineer, open-source builder, Python speaker.`} />
+  <meta name="theme-color" content="#faf9f6" />
+  <title>{profile.name} · Software Engineer & Open Source</title>
+</head>
+<body>
+  <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+  <main class="page" id="top">
+    <header class="site-header"><a class="wordmark" href="#top">anubhav<span class="accent">.</span></a><span class="location">⌖ &nbsp;{profile.location}</span></header>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow">{profile.eyebrow}</p><h1 id="hero-title">{profile.headline.replace(/\.$/, '')}<span class="accent">.</span></h1><p class="tagline">{profile.tagline}</p><p class="bio">{profile.bio}</p><div class="social-links">{contactLinks.map(link => <a href={link.href} target={link.href.startsWith('mailto:') ? undefined : '_blank'} rel="noopener noreferrer">{link.label} ↗</a>)}</div></div>
+      <div class="hero-art"><img src="/images/retro-hero.png" width="1536" height="1024" alt="Pixel-art traveler near Mount Fuji, a pagoda and cherry blossoms" /></div>
+    </section>
+    <section class="section" id="projects"><SectionHeading eyebrow="SELECTED PROJECTS" title="Things I’ve built"/><div class="projects-grid">{projects.filter(p => p.featured).map(project => <ProjectCard project={project}/>)}</div>{projects.some(p => !p.featured) && <details class="expand"><summary>More projects <span>↓</span></summary><div class="projects-grid extra">{projects.filter(p => !p.featured).map(project => <ProjectCard project={project}/>)}</div></details>}</section>
+    <section class="section" id="talks"><div class="section-head-row"><SectionHeading eyebrow="CONFERENCE TALKS" title="Speaking around the world" description="Sharing what I learn at Python conferences and community events." /></div><div class="talks-grid">{featuredTalks.map(talk => <TalkCard talk={talk}/>)}</div>{extraTalks.length > 0 && <details class="expand"><summary>View all talks <span>↓</span></summary><div class="talks-grid extra">{extraTalks.map(talk => <TalkCard talk={talk}/>)}</div></details>}</section>
+    <section class="section" id="writing"><SectionHeading eyebrow="WRITING" title="Notes from the journey" description="Articles about engineering, open source, and the things I’m figuring out along the way."/><div class="articles-list">{featuredArticles.map(article => <ArticleCard article={article}/>)}</div>{extraArticles.length > 0 && <details class="expand"><summary>View all articles <span>↓</span></summary><div class="articles-list extra">{extraArticles.map(article => <ArticleCard article={article}/>)}</div></details>}<div class="writing-links">{profile.medium && <a class="subtle-link" href={profile.medium} target="_blank" rel="noopener noreferrer">Read more on Medium ↗</a>}{profile.devto && <a class="subtle-link" href={profile.devto} target="_blank" rel="noopener noreferrer">Read more on DEV.to ↗</a>}</div></section>
+    <section class="section journey" id="experience"><div><SectionHeading eyebrow="PROFESSIONAL JOURNEY" title="From product engineering to developer tooling" description="Embedded systems, high-growth startups, and banking - building systems and tools that help teams ship."/></div><div class="experience-list">{experience.map(job => <div class="experience-item">{job.logo && <img class="company-logo" src={job.logo} alt={`${job.company} logo`} loading="lazy" />}<div class="experience-copy"><strong>{job.role}</strong><span>{job.company}</span><small>{job.period}</small></div></div>)}</div></section>
+    <section class="section contact" id="contact"><blockquote>“{profile.footer}”<cite>- {profile.name.toUpperCase()}</cite>{profile.email && <a class="contact-email" href={`mailto:${profile.email}`}>Say hello ↗</a>}</blockquote></section>
+    <footer class="site-footer"><span>© {new Date().getFullYear()} {profile.name}. made with love in tokyo :)</span><a href="#top">Back to top ↑</a></footer>
+  </main>
+</body>
+</html>

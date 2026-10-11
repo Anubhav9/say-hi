@@ -1,0 +1,23 @@
+[
+  {
+    "company": "National Australia Bank",
+    "logo": "/images/companies/nab.svg",
+    "role": "Senior Software Engineer",
+    "period": "2024 - Present",
+    "description": "Core engineering, developer tooling, and engineering productivity."
+  },
+  {
+    "company": "Swiggy Dineout",
+    "logo": "/images/companies/swiggy.png",
+    "role": "Senior Software Engineer",
+    "period": "Previously",
+    "description": "Quality engineering and test automation."
+  },
+  {
+    "company": "STMicroelectronics",
+    "logo": "/images/companies/stm.svg",
+    "role": "Intern",
+    "period": "Previously",
+    "description": "Bluetooth mesh technology."
+  }
+]

@@ -1,0 +1,40 @@
+---
+const { project } = Astro.props;
+
+function formatCount(n: number) {
+  if (n >= 1_000_000) return `${(n / 1_000_000).toFixed(1).replace(/\.0$/, '')}M`;
+  if (n >= 1_000) return `${(n / 1_000).toFixed(1).replace(/\.0$/, '')}k`;
+  return n.toLocaleString();
+}
+
+const stats = [
+  project.stars != null && { label: 'stars', value: formatCount(project.stars) },
+  project.downloads != null && { label: 'downloads', value: formatCount(project.downloads) },
+].filter(Boolean);
+---
+<article class="project-card">
+  <img
+    class:list={[{ 'pixel-art': project.pixelArt }]}
+    src={project.image}
+    alt={`${project.name} illustration`}
+    loading="lazy"
+    width="152"
+    height="152"
+  />
+  <div class="project-body">
+    <h3>{project.name}</h3>
+    <p>{project.description}</p>
+    {stats.length > 0 && (
+      <div class="project-stats">
+        {stats.map(stat => (
+          <span><strong>{stat.value}</strong> {stat.label}</span>
+        ))}
+      </div>
+    )}
+    <div class="tags">{project.tags.map(tag => <span>{tag}</span>)}</div>
+    <div class="card-links">
+      {project.url && <a href={project.url} target="_blank" rel="noopener noreferrer">{project.urlLabel || 'View project'} ↗</a>}
+      {project.github && <a href={project.github} target="_blank" rel="noopener noreferrer">GitHub ↗</a>}
+    </div>
+  </div>
+</article>

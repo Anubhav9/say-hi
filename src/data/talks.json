@@ -1,0 +1,47 @@
+[
+  {
+    "conference": "PyCon Japan 2026",
+    "location": "Hiroshima, Japan",
+    "date": "Aug 2026",
+    "title": "Gamifying Kubernetes with Python: Building a Retro TUI Learning Adventure",
+    "url": "https://2026.pycon.jp/en/talks/77EUFE",
+    "image": "/images/talks/pycon-jp-2026.jpg",
+    "slides": "",
+    "video": "",
+    "featured": true
+  },
+  {
+    "conference": "Python Asia 2026",
+    "location": "Manila, Philippines",
+    "date": "Mar 2026",
+    "title": "From Config to Cloud: A Pythonic Approach to Platform Independent Design",
+    "url": "https://pretalx.com/python-asia-2026/talk/KTG7EW/",
+    "image": "/images/talks/python-asia-2026.jpg",
+    "slides": "",
+    "video": "https://www.youtube.com/watch?v=TSaNYMuPftk",
+    "videoLabel": "Watch on YouTube",
+    "featured": true
+  },
+  {
+    "conference": "PyCon Indonesia 2025",
+    "location": "Jakarta, Indonesia",
+    "date": "Dec 2025",
+    "title": "Brewing Better Reports - RedCoffee and SonarQube",
+    "url": "https://2025.pycon.id/call-for-proposal",
+    "image": "/images/talks/pycon-indonesia-2025.jpg",
+    "slides": "",
+    "video": "",
+    "featured": true
+  },
+  {
+    "conference": "PyCon Malaysia 2025",
+    "location": "Kuala Lumpur, Malaysia",
+    "date": "Nov 2025",
+    "title": "Brewing Better Reports - RedCoffee and SonarQube",
+    "url": "https://www.pycon.my/",
+    "image": "/images/talks/pycon-malaysia-2025.jpg",
+    "slides": "",
+    "video": "",
+    "featured": true
+  }
+]

@@ -1,0 +1,14 @@
+---
+const { talk } = Astro.props;
+---
+<article class="talk-card">
+  {talk.image ? <img class="talk-photo" src={talk.image} alt={`${talk.conference} talk photograph`} loading="lazy" /> : <div class="talk-photo placeholder" aria-label="Conference photograph placeholder"><span>PHOTO<br/>COMING SOON</span></div>}
+  <div class="talk-name"><h3>{talk.conference}</h3><span class="pill">SPEAKER</span></div>
+  <p class="muted small">{talk.location} · {talk.date}</p>
+  <p class="talk-title">{talk.title}</p>
+  <div class="card-links">
+    {talk.url && <a href={talk.url} target="_blank" rel="noopener noreferrer">Details ↗</a>}
+    {talk.slides && <a href={talk.slides} target="_blank" rel="noopener noreferrer">Slides ↗</a>}
+    {talk.video && <a href={talk.video} target="_blank" rel="noopener noreferrer">{talk.videoLabel || 'Video'} ↗</a>}
+  </div>
+</article>

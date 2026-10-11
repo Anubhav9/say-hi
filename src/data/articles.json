@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Self-Hosting Kubernetes Challenges on a Mini PC : Building a Public Home Lab ( Part 4)",
+    "description": "Turning a mini PC into a publicly accessible Kubernetes playground where users can solve real cluster challenges.",
+    "date": "Aug 2026",
+    "url": "https://medium.com/@anubhavsanyal/self-hosting-kubernetes-challenges-on-a-mini-pc-building-a-public-home-lab-part-4-0b7371068c75",
+    "source": "Medium",
+    "category": "Kubernetes",
+    "featured": true
+  },
+  {
+    "title": "Self-Hosting Kubernetes Challenges on a Mini PC : Building a Public Home Lab ( Part 3)",
+    "description": "Turning a mini PC into a publicly accessible Kubernetes playground where users can solve real cluster challenges.",
+    "date": "Jul 2026",
+    "url": "https://medium.com/@anubhavsanyal/self-hosting-kubernetes-challenges-on-a-mini-pc-building-a-public-home-lab-part-3-3fedab1a3c06",
+    "source": "Medium",
+    "category": "Kubernetes",
+    "featured": false
+  },
+  {
+    "title": "Self-Hosting Kubernetes Challenges on a Mini PC : Building a Public Home Lab ( Part 2)",
+    "description": "Turning a mini PC into a publicly accessible Kubernetes playground where users can solve real cluster challenges.",
+    "date": "Jul 2026",
+    "url": "https://medium.com/@anubhavsanyal/self-hosting-kubernetes-challenges-on-a-mini-pc-building-a-public-home-lab-part-2-348cfc56278d",
+    "source": "Medium",
+    "category": "Kubernetes",
+    "featured": false
+  },
+  {
+    "title": "Self-Hosting Kubernetes Challenges on a Mini PC : Building a Public Home Lab ( Part 1 )",
+    "description": "Turning a mini PC into a publicly accessible Kubernetes playground where users can solve real cluster challenges.",
+    "date": "Jul 2026",
+    "url": "https://medium.com/@anubhavsanyal/self-hosting-kubernetes-challenges-on-a-mini-pc-building-a-public-home-lab-part-1-e2798e11cb57",
+    "source": "Medium",
+    "category": "Kubernetes",
+    "featured": true
+  },
+  {
+    "title": "Build an AI Voice Assistant with n8n, Twilio, Telegram , Python & Claude - Part 4",
+    "description": "The final part of the series - wiring Claude into the voice pipeline and bringing the n8n, Twilio, Telegram, and Python stack together.",
+    "date": "Jul 2025",
+    "url": "https://medium.com/@anubhavsanyal/build-an-ai-voice-assistant-with-n8n-twilio-telegram-python-claude-part-4-db063d6332f7",
+    "source": "Medium",
+    "category": "AI",
+    "featured": false
+  },
+  {
+    "title": "Build an AI Voice Assistant with n8n, Twilio, Telegram , Python & Claude - Part 3",
+    "description": "Welcome back! If you’ve been following this series, you’ll recall that in Part 1, we configured a Telegram trigger to initiate our n8n pipeline, and in Part 2, we integrated Twilio and set up the…",
+    "date": "Jul 2025",
+    "url": "https://medium.com/@anubhavsanyal/build-an-ai-voice-assistant-with-n8n-twilio-telegram-python-claude-part-3-08d4a887babd",
+    "source": "Medium",
+    "category": "AI",
+    "featured": false
+  },
+  {
+    "title": "Build an AI Voice Assistant with n8n, Twilio, Telegram , Python & Claude - Part 2",
+    "description": "In the first part of this series - Build an AI Voice Assistant with n8n, Twilio, Telegram, Python & Claude - I walked you through setting up the input trigger. The setup was pretty straightforward:…",
+    "date": "Jul 2025",
+    "url": "https://medium.com/@anubhavsanyal/build-an-ai-voice-assistant-with-n8n-twilio-telegram-python-claude-part-2-5b237e570959",
+    "source": "Medium",
+    "category": "AI",
+    "featured": false
+  },
+  {
+    "title": "Build an AI Voice Assistant with n8n, Twilio, Telegram , Python & Claude - Part 1",
+    "description": "Building your own AI-powered voice assistant feels like the kind of weekend project that’s both fun and frustrating in equal parts - and that’s exactly how I spent mine. Sure, there are tons of…",
+    "date": "Jul 2025",
+    "url": "https://medium.com/@anubhavsanyal/build-an-ai-voice-assistant-with-n8n-twilio-telegram-python-claude-part-1-a66010ee66c2",
+    "source": "Medium",
+    "category": "AI",
+    "featured": false
+  },
+  {
+    "title": "Meet RedCoffee : A Python CLI to export SonarQube analysis as shareable PDF Reports",
+    "description": "How I built RedCoffee, a Python CLI that turns SonarQube Community Edition analysis into shareable PDF reports.",
+    "date": "Apr 2025",
+    "url": "https://dev.to/konnichiwa_anubhav/meet-redcoffee-a-python-cli-to-export-sonarqube-analysis-as-shareable-pdf-reports-19em",
+    "source": "DEV.to",
+    "category": "Open Source",
+    "featured": true
+  },
+  {
+    "title": "Efficient Testing: Playwright’s Authentication Solution",
+    "description": "A practical approach to managing authentication state in Playwright when backend login APIs are not available.",
+    "date": "May 2024",
+    "url": "https://medium.com/@anubhavsanyal/efficient-testing-playwrights-authentication-solution-ee858302e6b1",
+    "source": "Medium",
+    "category": "Testing",
+    "featured": false
+  },
+  {
+    "title": "From Code to Cloud: Automating EC2 Deployments with Python CLI",
+    "description": "Building a Python CLI to automate EC2 deployments and make getting code into production a little less painful.",
+    "date": "Dec 2023",
+    "url": "https://medium.com/@anubhavsanyal/from-code-to-cloud-automating-ec2-deployments-with-python-cli-e262396559a9",
+    "source": "Medium",
+    "category": "DevOps",
+    "featured": false
+  }
+]

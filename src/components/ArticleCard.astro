@@ -1,0 +1,7 @@
+---
+const { article } = Astro.props;
+---
+<article class="article-card">
+  <div><p class="eyebrow">{[article.source, article.category, article.date].filter(Boolean).join(' · ')}</p><h3>{article.title}</h3><p class="muted">{article.description}</p></div>
+  {article.url ? <a href={article.url} target="_blank" rel="noopener noreferrer" aria-label={`Read ${article.title}`}>Read ↗</a> : <span class="muted small">Draft entry</span>}
+</article>
