@@ -1,4 +1,6 @@
 ---
+import { asset } from '../utils/asset.js';
+
 const { project } = Astro.props;
 
 function formatCount(n: number) {
@@ -15,7 +17,7 @@ const stats = [
 <article class="project-card">
   <img
     class:list={[{ 'pixel-art': project.pixelArt }]}
-    src={project.image}
+    src={asset(project.image)}
     alt={`${project.name} illustration`}
     loading="lazy"
     width="152"
